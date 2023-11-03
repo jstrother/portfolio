@@ -12,9 +12,13 @@ import ThemeIcon from './ThemeIcon.astro';
 <style>
   header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
     width: 100%;
+
+    @media screen and (min-width: 636px) {
+      justify-content: center;
+    }
   }
 </style>
