@@ -1,7 +1,15 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import Certification from "@components/Certification.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import Administrator from "@images/Administrator.png";
+import JsDev1 from "@images/JS_Dev_1.png";
+import PAB from "@images/Platform_App_Builder.png";
 
 const pageTitle = "Salesforce Certifications";
 ---
 
-<BaseLayout pageTitle={ pageTitle }></BaseLayout>
+<BaseLayout pageTitle={ pageTitle }>
+  <Certification certImage={Administrator} certName="Administrator" />
+  <Certification certImage={JsDev1} certName="JavaScript Developer I" />
+  <Certification certImage={PAB} certName="Platform App Builder" />
+</BaseLayout>

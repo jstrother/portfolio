@@ -1,0 +1,9 @@
+---
+import { Image } from 'astro:assets';
+
+const { certName, certImage } = Astro.props;
+---
+
+<h4>{ certName }</h4>
+<Image src={ certImage } alt=`${certName} Certification` />
+
